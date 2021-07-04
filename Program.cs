@@ -2,12 +2,12 @@
 
 namespace BankAccountNS
 {
-    public class BankAccount
+    public class BankNS
     {
         private readonly string m_customerName;
         private double m_balance;
-        private BankAccount() { }
-        public BankAccount(string customerName, double balance)
+        private BankNS() { }
+        public BankNS(string customerName, double balance)
         {
             m_customerName = customerName;
             m_balance = balance;
@@ -42,7 +42,7 @@ namespace BankAccountNS
             {
                 throw new ArgumentOutOfRangeException("amount");
             }
-            m_balance += amount;
+            m_balance += amount - 10;
         }
 
         public static void Main()
