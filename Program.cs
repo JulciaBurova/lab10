@@ -42,7 +42,12 @@ namespace BankAccountNS
             {
                 throw new ArgumentOutOfRangeException("amount");
             }
+<<<<<<< HEAD
             m_balance += amount - 10;
+=======
+            m_balance += 2 * amount; // intentionally incorrect code
+            ;
+>>>>>>> doubleCredit
         }
 
         public static void Main()
